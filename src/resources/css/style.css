@@ -1,0 +1,49 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');*/
+.root{
+    -fx-font-family: Ubuntu;
+}
+#titleLabel{
+    -fx-font-family: Pacifico ;
+    -fx-font-size: 22;
+}
+#usersSection{
+    -fx-background-color: #205159;
+    -fx-pref-height: 400.0;
+    -fx-pref-width: 220.0;
+}
+#chatSection{
+    -fx-background-color: #0b2b30;
+    -fx-pref-height: 357.0;
+    -fx-pref-width: 380.0;
+}
+#addContact{
+    -fx-alignment: center;
+    -fx-pref-height: 38.0;
+    -fx-pref-width: 210.0;
+    -fx-background-color: #2d6973;
+    -fx-background-radius: 0 0 15 15;
+}
+#addContact Label{
+    -fx-alignment: center;
+    -fx-pref-width: 216.0;
+    -fx-pref-height: 32.0;
+    -fx-font-family: Pacifico;
+    -fx-font-size: 14;
+}
+.msgEnter{
+    -fx-pref-width:382 ;
+    -fx-font-size: 16;
+    -fx-font-family: Ubuntu;
+    -fx-text-fill: cornsilk;
+    -fx-background-radius: 5px;
+    -fx-border-insets: 15px;
+    -fx-text-alignment: left;
+}
+.msgOuter{
+    -fx-pref-width: 382 ;
+    -fx-font-family: Ubuntu;
+    -fx-font-size: 16;
+    -fx-text-fill: aqua;
+    -fx-border-insets: 15px;
+    -fx-text-alignment: right;
+}

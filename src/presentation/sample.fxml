@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="CENTER" prefWidth="600.0" stylesheets="@../resources/css/style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlor.Controller">
+   <children>
+      <HBox prefHeight="400.0" prefWidth="600.0" spacing="10.0" style="-fx-background-color: #407780;" GridPane.rowIndex="4">
+         <children>
+            <VBox id="usersSection" prefWidth="220.0">
+               <children>
+                  <HBox id="addContact">
+                     <children>
+                        <Label text="addContact" />
+                        <Button id="addContact" mnemonicParsing="false" onAction="#newContact" text="+" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox style="-fx-background-color: #0b2b30;">
+               <children>
+                  <VBox id="chatSection" fx:id="chatSection" prefHeight="357.0" prefWidth="380.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="32.0" prefWidth="382.0" style="-fx-background-color: #2d6973; -fx-background-radius: 0 0 15 15;" text="userTarget" />
+                     </children>
+                  </VBox>
+                  <HBox alignment="CENTER_LEFT" prefWidth="375.0" spacing="10.0" style="-fx-background-color: #407780;">
+                     <children>
+                        <TextField id="msgInput" fx:id="msgInput" prefHeight="35.0" prefWidth="280.0" />
+                        <Button id="sendBtn" mnemonicParsing="false" onAction="#sendMsg" prefHeight="34.0" prefWidth="69.0" text="Send" />
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="500.0" style="-fx-background-color: #407780;">
+         <children>
+            <Label id="usernameLabel" fx:id="username" alignment="CENTER" prefHeight="60.0" prefWidth="182.0" text="Username" />
+            <Label id="titleLabel" alignment="CENTER" prefHeight="60.0" prefWidth="250.0" text="Lets Talk" />
+         </children>
+      </HBox>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
