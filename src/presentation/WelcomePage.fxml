@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450" prefWidth="600" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.WelcomePageController">
+   <left>
+      <AnchorPane id="leftPane" prefHeight="450.0" prefWidth="283.0" style="-fx-background-image: url('/ChatAppGui/images/bg.jpg');" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="233.0" fitWidth="247.0" layoutX="18.0" layoutY="124.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/images/left.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="450.0" prefWidth="341.0" style="-fx-background-color: #154c79;" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="input" layoutX="29.0" layoutY="185.0" prefHeight="26.0" prefWidth="257.0" promptText="Username" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: white;" />
+            <Text fx:id="welomMsg" fill="WHITE" layoutX="53.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create your username" textAlignment="CENTER" wrappingWidth="209.33673095703125">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Text>
+            <Button layoutX="69.0" layoutY="225.0" mnemonicParsing="false" onAction="#connect" prefHeight="34.0" prefWidth="178.0" style="-fx-background-color: transparent;" text="Connect" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font></Button>
+            <ImageView fitHeight="23.0" fitWidth="30.0" layoutX="275.0" layoutY="14.0" onMouseClicked="#exit" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/images/exit.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+   </right>
+</BorderPane>
